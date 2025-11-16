@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite — Cultura, Sustentabilidade e Desenvolvimento Social</title>
+    <style>
+        :root {
+            --green: #2e7d32;
+            --green-dark: #1b5e20;
+            --green-light: #43a047;
+            --text: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: "Inter", system-ui, sans-serif;
+            color: var(--text);
+            background: var(--green);
+        }
+
+        .page {
+            position: relative;
+            min-height: 100%;
+            display: grid;
+            place-items: center;
+            padding: 3rem 1.25rem;
+            overflow: hidden;
+            isolation: isolate;
+
+            /* Ícones vetoriais espalhados no fundo */
+            background-image:
+                url("https://static.todamateria.com.br/upload/su/st/sustentabilidade-og.jpg");
+        }
+
+        .card {
+            position: relative;
+            z-index: 1;
+            max-width: 820px;
+            width: 100%;
+            background: rgba(227, 231, 227, 0.08);
+            border-radius: 18px;
+            box-shadow: 0 20px 40px var(--shadow);
+            padding: 2.25rem 2rem;
+            backdrop-filter: blur(6px);
+        }
+
+        .title {
+            margin: 1rem 0 0.5rem;
+            font-size: clamp(1.6rem, 3.2vw, 3rem);
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin: 0.25rem 0 1.25rem;
+            font-size: clamp(1rem, 2.6vw, 1.25rem);
+            opacity: 0.95;
+            color: white;
+            /* Cor do texto */
+            -webkit-text-stroke: 1.5px #2e7d32;
+            ;
+            /* Largura e cor do contorno */
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            padding-top: 20px;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding-top: 20px;
+        }
+
+        .chip {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            padding: 0.5rem 0.75rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .cta {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer-note {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: #ffffff;
+            font-weight: bold;
+            opacity: 0.9;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <section class="card">
+            <h1 class="title">Convite para transformar a cidade</h1>
+            <p class="subtitle">Cultura, Sustentabilidade e Desenvolvimento Social Juntos, para um futuro melhor</p>
+
+            <div class="content">
+                <p>
+                    Estamos reunindo a comunidade em um projeto transformador que une <strong>desenvolvimento
+                        social</strong>,
+                    <strong>cultura</strong> e <strong>sustentabilidade</strong> para fortalecer nossa cidade.
+                </p>
+                <p>
+                    Venha participar dessa iniciativa que pode impactar positivamente a sua vida, renovar a cultura
+                    local e
+                    promover práticas sustentáveis com resultados concretos.
+                </p>
+
+                <div class="highlights">
+                    <div class="chip">Cultura</div>
+                    <div class="chip">Sustentabilidade</div>
+                    <div class="chip">Desenvolvimento social</div>
+                </div>
+
+
+                <p class="footer-note">
+                    Juntos, podemos construir uma cidade mais justa, criativa e sustentável.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
